@@ -1,0 +1,802 @@
+@import url(https://allfont.ru/allfont.css?fonts=franklin-gothic-medium);
+/*font-family: 'Franklin Gothic Medium', arial;*/
+@import url(https://myfonts.ru/myfonts?fonts=bahnschrift);
+/*font-family: 'Bahnschrift', arial;*/
+
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+nav{
+    background-color: rgb(52, 64, 81);
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo > p > a {
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', arial;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    -webkit-animation:com 5s ;
+    -o-animation:com 5s ;
+    animation:com 5s ;
+}
+
+@keyframes com{
+    from{
+        opacity: 0;
+    }
+    to {opacity: 1;
+    }
+}
+
+.headerNav{
+    width: 525px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerNav > li > a{
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', arial;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: inline-block;
+    transform: scale(1);
+}
+
+.headerNav > li{
+    -webkit-animation:topa 1s forwards;
+    -o-animation:topa 1s forwards;
+    animation:topa 1s forwards;
+    opacity: 0;
+}
+
+.headerNav > li > a:hover{
+    color: rgba(209, 119, 0, 1);
+    
+}
+
+.headerNav > li > a:active{
+    transform: scale(1.1)
+}
+
+.headerNav > li > a.mPS2id-highlight{
+    color: rgba(209, 119, 0, 1);
+}
+
+@keyframes topa{
+    from{
+        opacity: 0;
+        margin-top: -100px;
+    }
+    to{
+       opacity: 1;
+       margin-top: 0px;
+    }
+}
+
+.headerNav > li:nth-child(2){
+    animation-delay: 1.5s;
+}
+
+.headerNav > li:nth-child(3){
+    animation-delay: 2s;
+}
+
+.headerNav > li:nth-child(4){
+    animation-delay: 2.5s;
+}
+
+.headerNav > li:nth-child(5){
+    animation-delay: 3s;
+}
+
+.headerNav > li:nth-child(6){
+    animation-delay: 3.5s;
+}
+
+.preview{
+    width: 100%;
+    height: 100vh;
+    margin:0;
+    padding: 0;
+}   
+.previewFon{
+    background-image: url(./Img/main1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.animachinprewie{
+    -o-animation: prewieAnim 2s ;
+    -webkit-animation: prewieAnim 2s;
+    animation: prewieAnim 2s;
+}
+
+@keyframes prewieAnim{
+    from{
+        opacity: 0;
+        margin-left: -1000px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+
+.mainHeding{
+    margin-top: 15%;
+    font-size: 79px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(44, 56, 74);
+    text-align: center;
+}
+
+.previewText{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main1Text{
+    font-size: 21px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(121, 129, 141);
+    margin-top: -5%;
+}
+
+.inputMain1{
+    margin-top: 5%;
+}
+
+.inputLeft{
+    width: 95px;
+    height: 40px;
+    border-width: 2.083px;
+    border-color: rgb(109, 118, 130);
+    border-style: solid;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(109, 118, 130);
+    margin-right: 25px;
+    transform: scale(1);
+}
+
+.inputLeft:hover{
+    color: rgba(209, 119, 0, 1);
+    border-color: rgba(209, 119, 0, 1);
+}
+
+.inputLeft:active{
+    transform: scale(1.1);
+}
+
+.inputRight{
+    width: 170px;
+    height: 40px;
+    border-width: 2.083px;
+    border-color: rgb(109, 118, 130);
+    border-style: solid;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(109, 118, 130);
+    transform: scale(1);
+}
+
+.inputRight:hover{
+    color: rgba(209, 119, 0, 1);
+    border-color: rgba(209, 119, 0, 1);
+}
+
+.inputRight:active{
+    transform: scale(1.1);
+}
+
+.aboutMeLocation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.aboutMeHeading{
+    font-size: 33.333px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(38, 50, 68);
+}
+
+.aboutMeLine{
+    border: solid 2px rgba(209, 119, 0, 1); 
+    width: 70px;
+    margin-top: 1%;
+}
+
+.aboutMePhoto{
+    background-image: url(./Img/aboutMePhoto.png);
+    width: 200px;
+    height: 200px;
+    margin-top: 5%;
+}
+
+.aboutMeText1{
+    font-size: 16.667px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(63, 73, 90);
+    margin-top: 4%;
+}
+
+.aboutMeTetx2{
+    font-size: 16.667px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(63, 73, 90);
+    margin-top: 2%;
+}
+
+.aboutMeBtn{
+    background-image: url(./Img/иконка.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 200px;
+    height: 40px;
+    border-width: 2.083px;
+    border-color: rgb(111, 112, 126);
+    border-style: solid;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(109, 118, 130);
+    margin-top: 3%;
+}
+
+.iCan{
+    margin-top: 10%;
+    width: 100%;
+}
+
+.iCanFon{
+    background-image: url(./Img/iCanFon.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iCanHeading{
+    font-size: 33.333px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(38, 50, 68);
+    margin-top: 8%;
+}
+
+.iCanLine{
+    border: solid 2px rgba(209, 119, 0, 1); 
+    width: 70px;
+    margin-top: 2%;
+}
+
+.iCanIcon{
+    width: 90%;
+   display: flex;
+   justify-content: space-between;
+   margin-top: 10%;
+}
+
+.designLocation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.design{
+    background-image: url(./Img/Дизайн.png);
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+}
+
+.developmentLocation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.development{
+    background-image: url(./Img/Разработка.png);
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.optimizationLocation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.optimization{
+    background-image: url(./Img/Оптимизация.png);
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+}
+
+.marketingLocation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.marketing{
+    background-image: url(./Img/Маркетинг.png);
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+}
+
+.iCanIcon > div  > h3{
+    font-size: 21px;
+    font-family: 'Bahnschrift', arial;
+    color: rgb(207, 118, 0);
+}
+
+.iCanIcon > div  > p{
+    font-size: 16.667px;
+    font-family: 'Franklin Gothic Medium', arial;
+    color: rgb(63, 73, 90);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.casesHead{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+
+}
+
+.casesHeading{
+    font-size: 33.333px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(38, 50, 68);
+    margin-top: 8%;
+}
+
+.casesLine{
+    border: solid 2px rgba(209, 119, 0, 1); 
+    width: 70px;
+    margin-top: 2%;
+}
+
+.casesTextHeading{
+    font-size: 16.667px;
+    font-family: 'Franklin Gothic Medium', arial;
+    color: rgb(63, 73, 90);
+    text-align: center;
+}
+
+.casesPhoto{
+    background-image: url(./Img/casesPhoto.png);
+    height: 620px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 8%;
+}
+
+.casesLeft > h2{
+    font-size: 25px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(56, 67, 84);
+}
+
+.casesLeft > p{
+    font-size: 16.667px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(63, 73, 90);
+}
+
+.casesBatton{
+    border-radius: 5px;
+    background-color: rgb(99, 181, 174);
+    width: 250px;
+    height: 50px;
+    font-size: 21px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.casesBatton:hover{
+    color:rgba(209, 119, 0, 1) ;
+}
+
+.casesRight > h2{
+    font-size: 25px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(56, 67, 84);
+    line-height: 0.833;
+       
+}
+
+.casesRight > p{
+    font-size: 18px;
+    font-family: "Calibri";
+    color: rgb(63, 73, 90);
+}
+
+.casesInfo{
+    margin-top: -10%;
+    margin-left: 18%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.casesRight{
+    width: 70%;
+}
+
+.cost{
+    margin-top: 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.costHeading{
+    font-size: 46px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(28, 37, 52);
+}
+
+.costSiteType > h2{
+    font-size: 29px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(28, 37, 52);
+}
+
+.costSiteType > form > p > select{
+    width: 700px;
+    height: 50px;
+    font-size: 16.667px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(115, 115, 115);
+}
+
+.costSiteType > form > p > select > option{
+    font-size: 16.667px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(115, 115, 115);
+}
+
+.costLine{
+    border: solid 2px rgb(115, 115, 115);; 
+    width: 700px;
+    margin-top: 2%;
+    opacity: 0.3;
+}
+
+.costBat{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.batLeft{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.costBat > div > p{
+    font-size: 20px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(28, 37, 52);
+}
+
+.batright{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.statistics{
+    margin-top: 10%;
+}
+
+.statisticsFon{
+    background-image: url(./Img/statistikFon.png);
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statisticsHeading{
+    font-size: 33.333px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(50, 62, 79);
+}
+
+.statisticsLine{
+    border: solid 2px rgba(209, 119, 0, 1); 
+    width: 70px;
+    margin-top: 2%;
+}
+
+.statisticsIcon{
+    margin-top: 10%;
+    display: flex;
+    width: 85%;
+    justify-content: space-evenly;
+}
+
+.iconSmile{
+    background-image: url(./Img/смайл.png);
+    height: 60px;
+    width: 60px;
+    background-repeat: no-repeat;
+}
+
+.IconWork{
+    background-image: url(./Img/statскобки.png);
+    height: 60px;
+    width: 65px;
+    background-repeat: no-repeat;
+}
+
+.IconJackdaw{
+    background-image: url(./Img/галочка.png);
+    height: 60px;
+    width: 65px;
+    background-repeat: no-repeat;
+}
+
+.IconCup{
+    background-image: url(./Img/кубок.png);
+    height: 60px;
+    width: 65px;
+    background-repeat: no-repeat;
+}
+
+.statisticsIcon > div > h2{
+    font-size: 37.5px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(50, 62, 79);
+}
+
+.statisticsIcon > div > P{
+    font-size: 15px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(50, 62, 79);
+}
+
+.statisticsIconSmile, .statisticsIconWork, .statisticsIconJackdaw, .statisticsIconCup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviewsHeading{
+    font-size: 33.333px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(36, 48, 66);
+}
+
+.reviewsLine{
+    border: solid 2px rgba(209, 119, 0, 1); 
+    width: 70px;
+    margin-top: 2%;
+}
+
+.reviewsPhoto{
+    background-image: url(./Img/reviewPhoto.png);
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    margin-top: 5%;
+}
+
+.reviews > p{
+    margin-top: 3%;
+    font-size: 16.667px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(36, 48, 66);
+    text-align: center;
+}
+
+.square{
+    display: flex;
+    justify-content: space-evenly;
+    width: 10%;
+    margin-top: 3%;
+}
+
+.square1{
+    width: 10px;
+    height: 10px;
+    border-radius: 25%;
+    background:  rgba(209, 119, 0, 1)
+}
+
+.square2{
+    width: 10px;
+    height: 10px;
+    border-radius: 25%;
+    background:  rgb(115, 115, 115)
+}
+
+.square3{
+    width: 10px;
+    height: 10px;
+    border-radius: 25%;
+    background:  rgb(115, 115, 115)
+}
+
+.contactsFon{
+    background-image: url(./Img/contactFon.png);
+    width: 100%;
+    height: 150vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.contactsHeading{
+    font-size: 33.333px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(255, 255, 255);
+    margin-top: 5%;
+}
+
+.contactsLine{
+    border: solid 2px rgba(209, 119, 0, 1); 
+    width: 70px;
+    margin-top: 2%;
+}
+
+.contactsFon > p{
+    font-size: 16.667px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(255, 255, 255);
+    margin-top: 2%;
+}
+
+.contactsIcon{
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    margin-top: 5%;
+}
+
+.contactsLocahion, .contactsEmail, .contactsPhone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.LocahionIcon{
+    background-image: url(./Img/contactLacahion.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+}
+
+.emailIcon{
+    background-image: url(./Img/contactEmail.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+}
+
+.phoneIcon{
+    background-image: url(./Img/contactPhone.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+}
+
+.contactsText{
+    font-size: 21px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(255, 255, 255);
+}
+
+.contactsIcon > div > p{
+    font-size: 16.667px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(255, 255, 255);
+}
+
+.inpContact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.nameInp, .emailInp{
+    width: 400px;
+    height: 30px;
+    font-size: 16.667px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(93, 93, 94);
+    opacity: 0.5;
+    margin-top: 3%;
+}
+
+.messageInp{
+    width: 812px;
+    height: 100px;
+    font-size: 16.667px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(93, 93, 94);
+    text-align: start;
+    opacity: 0.5;
+    margin-top: 2%;
+}
+
+.contactButton{
+    margin-top: 20%;
+   height: 50px;
+   width: 175px;
+   background: local;
+   border-radius: 10%;
+   color: rgb(255, 255, 255);
+   border-color: rgb(93, 93, 94);
+   font-size: 16.667px;
+    font-family: "Franklin Gothic Medium";
+    transform: scale(1.0);
+}
+
+.contactButton:hover{
+    color: rgba(209, 119, 0, 1);
+    border-color: rgba(209, 119, 0, 1);
+}
+
+.contactButton:active{
+    transform: scale(1.1);
+}
+
+
+
+
+
